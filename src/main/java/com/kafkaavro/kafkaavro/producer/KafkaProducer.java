@@ -1,4 +1,4 @@
-package com.kafka.producer;
+package com.kafkaavro.kafkaavro.producer;
 
 
 import com.kafkaavro.dto.Employee;

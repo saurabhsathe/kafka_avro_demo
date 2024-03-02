@@ -5,11 +5,13 @@
   "fields": [
     {
       "name": "id",
-      "type": "string"
+      "type": "string",
+       "default": ""
     },
     {
       "name": "firstName",
-      "type": "string"
+      "type": "string",
+            "default": ""
     },
     {
       "name": "middleName",
@@ -18,7 +20,8 @@
     },
     {
       "name": "lastName",
-      "type": "string"
+      "type": "string",
+      "default":""
     },
     {
       "name": "emailId",

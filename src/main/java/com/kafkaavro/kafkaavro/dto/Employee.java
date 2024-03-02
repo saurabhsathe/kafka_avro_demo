@@ -3,7 +3,7 @@
  *
  * DO NOT EDIT DIRECTLY
  */
-package com.kafkaavro.dto;
+package com.kafkaavro.kafkaavro.dto;
 
 import org.apache.avro.specific.SpecificData;
 import org.apache.avro.message.BinaryMessageEncoder;
@@ -13,8 +13,8 @@ import org.apache.avro.message.SchemaStore;
 @SuppressWarnings("all")
 @org.apache.avro.specific.AvroGenerated
 public class Employee extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -8395472796249322782L;
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Employee\",\"namespace\":\"com.kafkaavro.dto\",\"fields\":[{\"name\":\"id\",\"type\":\"string\",\"default\":\"\"},{\"name\":\"firstName\",\"type\":\"string\",\"default\":\"\"},{\"name\":\"middleName\",\"type\":\"string\",\"default\":\"\"},{\"name\":\"lastName\",\"type\":\"string\",\"default\":\"\"},{\"name\":\"emailId\",\"type\":\"string\",\"default\":\"\"}]}");
+  private static final long serialVersionUID = 8839921092461686440L;
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"Employee\",\"namespace\":\"com.kafkaavro.kafkaavro.dto\",\"fields\":[{\"name\":\"id\",\"type\":\"string\"},{\"name\":\"firstName\",\"type\":\"string\"},{\"name\":\"middleName\",\"type\":\"string\",\"default\":\"\"},{\"name\":\"lastName\",\"type\":\"string\"},{\"name\":\"emailId\",\"type\":\"string\",\"default\":\"\"}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
 
   private static SpecificData MODEL$ = new SpecificData();
@@ -190,8 +190,8 @@ public class Employee extends org.apache.avro.specific.SpecificRecordBase implem
    * Creates a new Employee RecordBuilder.
    * @return A new Employee RecordBuilder
    */
-  public static com.kafkaavro.dto.Employee.Builder newBuilder() {
-    return new com.kafkaavro.dto.Employee.Builder();
+  public static com.kafkaavro.kafkaavro.dto.Employee.Builder newBuilder() {
+    return new com.kafkaavro.kafkaavro.dto.Employee.Builder();
   }
 
   /**
@@ -199,8 +199,8 @@ public class Employee extends org.apache.avro.specific.SpecificRecordBase implem
    * @param other The existing builder to copy.
    * @return A new Employee RecordBuilder
    */
-  public static com.kafkaavro.dto.Employee.Builder newBuilder(com.kafkaavro.dto.Employee.Builder other) {
-    return new com.kafkaavro.dto.Employee.Builder(other);
+  public static com.kafkaavro.kafkaavro.dto.Employee.Builder newBuilder(com.kafkaavro.kafkaavro.dto.Employee.Builder other) {
+    return new com.kafkaavro.kafkaavro.dto.Employee.Builder(other);
   }
 
   /**
@@ -208,8 +208,8 @@ public class Employee extends org.apache.avro.specific.SpecificRecordBase implem
    * @param other The existing instance to copy.
    * @return A new Employee RecordBuilder
    */
-  public static com.kafkaavro.dto.Employee.Builder newBuilder(com.kafkaavro.dto.Employee other) {
-    return new com.kafkaavro.dto.Employee.Builder(other);
+  public static com.kafkaavro.kafkaavro.dto.Employee.Builder newBuilder(com.kafkaavro.kafkaavro.dto.Employee other) {
+    return new com.kafkaavro.kafkaavro.dto.Employee.Builder(other);
   }
 
   /**
@@ -233,7 +233,7 @@ public class Employee extends org.apache.avro.specific.SpecificRecordBase implem
      * Creates a Builder by copying an existing Builder.
      * @param other The existing Builder to copy.
      */
-    private Builder(com.kafkaavro.dto.Employee.Builder other) {
+    private Builder(com.kafkaavro.kafkaavro.dto.Employee.Builder other) {
       super(other);
       if (isValidValue(fields()[0], other.id)) {
         this.id = data().deepCopy(fields()[0].schema(), other.id);
@@ -261,7 +261,7 @@ public class Employee extends org.apache.avro.specific.SpecificRecordBase implem
      * Creates a Builder by copying an existing Employee instance
      * @param other The existing instance to copy.
      */
-    private Builder(com.kafkaavro.dto.Employee other) {
+    private Builder(com.kafkaavro.kafkaavro.dto.Employee other) {
             super(SCHEMA$);
       if (isValidValue(fields()[0], other.id)) {
         this.id = data().deepCopy(fields()[0].schema(), other.id);
@@ -298,7 +298,7 @@ public class Employee extends org.apache.avro.specific.SpecificRecordBase implem
       * @param value The value of 'id'.
       * @return This builder.
       */
-    public com.kafkaavro.dto.Employee.Builder setId(java.lang.CharSequence value) {
+    public com.kafkaavro.kafkaavro.dto.Employee.Builder setId(java.lang.CharSequence value) {
       validate(fields()[0], value);
       this.id = value;
       fieldSetFlags()[0] = true;
@@ -318,7 +318,7 @@ public class Employee extends org.apache.avro.specific.SpecificRecordBase implem
       * Clears the value of the 'id' field.
       * @return This builder.
       */
-    public com.kafkaavro.dto.Employee.Builder clearId() {
+    public com.kafkaavro.kafkaavro.dto.Employee.Builder clearId() {
       id = null;
       fieldSetFlags()[0] = false;
       return this;
@@ -337,7 +337,7 @@ public class Employee extends org.apache.avro.specific.SpecificRecordBase implem
       * @param value The value of 'firstName'.
       * @return This builder.
       */
-    public com.kafkaavro.dto.Employee.Builder setFirstName(java.lang.CharSequence value) {
+    public com.kafkaavro.kafkaavro.dto.Employee.Builder setFirstName(java.lang.CharSequence value) {
       validate(fields()[1], value);
       this.firstName = value;
       fieldSetFlags()[1] = true;
@@ -357,7 +357,7 @@ public class Employee extends org.apache.avro.specific.SpecificRecordBase implem
       * Clears the value of the 'firstName' field.
       * @return This builder.
       */
-    public com.kafkaavro.dto.Employee.Builder clearFirstName() {
+    public com.kafkaavro.kafkaavro.dto.Employee.Builder clearFirstName() {
       firstName = null;
       fieldSetFlags()[1] = false;
       return this;
@@ -376,7 +376,7 @@ public class Employee extends org.apache.avro.specific.SpecificRecordBase implem
       * @param value The value of 'middleName'.
       * @return This builder.
       */
-    public com.kafkaavro.dto.Employee.Builder setMiddleName(java.lang.CharSequence value) {
+    public com.kafkaavro.kafkaavro.dto.Employee.Builder setMiddleName(java.lang.CharSequence value) {
       validate(fields()[2], value);
       this.middleName = value;
       fieldSetFlags()[2] = true;
@@ -396,7 +396,7 @@ public class Employee extends org.apache.avro.specific.SpecificRecordBase implem
       * Clears the value of the 'middleName' field.
       * @return This builder.
       */
-    public com.kafkaavro.dto.Employee.Builder clearMiddleName() {
+    public com.kafkaavro.kafkaavro.dto.Employee.Builder clearMiddleName() {
       middleName = null;
       fieldSetFlags()[2] = false;
       return this;
@@ -415,7 +415,7 @@ public class Employee extends org.apache.avro.specific.SpecificRecordBase implem
       * @param value The value of 'lastName'.
       * @return This builder.
       */
-    public com.kafkaavro.dto.Employee.Builder setLastName(java.lang.CharSequence value) {
+    public com.kafkaavro.kafkaavro.dto.Employee.Builder setLastName(java.lang.CharSequence value) {
       validate(fields()[3], value);
       this.lastName = value;
       fieldSetFlags()[3] = true;
@@ -435,7 +435,7 @@ public class Employee extends org.apache.avro.specific.SpecificRecordBase implem
       * Clears the value of the 'lastName' field.
       * @return This builder.
       */
-    public com.kafkaavro.dto.Employee.Builder clearLastName() {
+    public com.kafkaavro.kafkaavro.dto.Employee.Builder clearLastName() {
       lastName = null;
       fieldSetFlags()[3] = false;
       return this;
@@ -454,7 +454,7 @@ public class Employee extends org.apache.avro.specific.SpecificRecordBase implem
       * @param value The value of 'emailId'.
       * @return This builder.
       */
-    public com.kafkaavro.dto.Employee.Builder setEmailId(java.lang.CharSequence value) {
+    public com.kafkaavro.kafkaavro.dto.Employee.Builder setEmailId(java.lang.CharSequence value) {
       validate(fields()[4], value);
       this.emailId = value;
       fieldSetFlags()[4] = true;
@@ -474,7 +474,7 @@ public class Employee extends org.apache.avro.specific.SpecificRecordBase implem
       * Clears the value of the 'emailId' field.
       * @return This builder.
       */
-    public com.kafkaavro.dto.Employee.Builder clearEmailId() {
+    public com.kafkaavro.kafkaavro.dto.Employee.Builder clearEmailId() {
       emailId = null;
       fieldSetFlags()[4] = false;
       return this;
